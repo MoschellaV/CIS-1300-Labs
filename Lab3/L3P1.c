@@ -41,12 +41,13 @@ int main(){
                 printf("%.2f / %.2f = %.2f \n", num1, num2, num1/num2);
             } else {
                 printf("Denominator cannot be 0 \n");
+            }
         }
     } 
+
     else {
         printf("%c is not a valid operator \n", operator);
     }
     return 0;
-    }
 }
 
