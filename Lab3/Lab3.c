@@ -18,7 +18,7 @@ int main(){
         // take input of first and second number 
         printf("Enter the 1st number: ");
         scanf("%f", &num1);
-        printf("Enter 2nd number: ");
+        printf("Enter the 2nd number: ");
         scanf("%f",&num2);
 
         // if operator is equal to +
