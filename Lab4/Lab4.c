@@ -3,7 +3,7 @@
 
 #define PI 3.142857
 
-int circumferenceAndArea(radius) {
+int circumferenceAndArea(float radius) {
     /*
     takes the radius as an argument
     calculates both area and circumference
