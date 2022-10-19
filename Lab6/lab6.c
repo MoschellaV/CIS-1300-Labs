@@ -47,7 +47,7 @@ char readOperator (void) {
 
    char operator;
 
-   printf("Enter a operator: ");
+   printf("Enter a operator ('+' '-' '*' '/' ): ");
    scanf("%c", &operator);
    return operator;
 }
@@ -78,7 +78,7 @@ double readANumber (void) {
 
    double number;
 
-   printf("Enter a Number: ");
+   printf("Enter a number: ");
    scanf("%lf", &number);
    return number;
     
