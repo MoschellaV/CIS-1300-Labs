@@ -94,7 +94,7 @@ double readANumber (void) {
  */
 double compute (double aNumber, double anotherNumber, char operator) {
 
-   // hello
+   // hello s
    if (operator == 43) return aNumber + anotherNumber;
    else if (operator == 45) return aNumber - anotherNumber;
    else if (operator == 42) return aNumber*anotherNumber;
