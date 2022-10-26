@@ -11,7 +11,6 @@ int main(){
    int anArray [MAX], newArray [MAX];
    
    printf ("Testing function anArray \n\n");
-
    readArray(anArray);
 
    printf ("Testing function reverseArray \n\n");
@@ -24,7 +23,7 @@ void readArray(int* anArray){
     /*Function takes in array as input*/
    printf("Enter 5 elements\n");
    scanf("%d%d%d%d%d",&anArray[0],&anArray[1],&anArray[2],&anArray[3],&anArray[4]);
-   printf("\n\n");
+   printf("\n");
    }
 
 void reverseArray (int* original, int* reversed){
@@ -34,13 +33,11 @@ void reverseArray (int* original, int* reversed){
    printf("Original Array\n");
    printArray(original);
 
-   printf("Reversed Array");
-
    for (int i = 0; i < 5; i++){
       reversed[i] = original[count];
       count --;
    }
-   printf("\n");
+   printf("Reversed Array\n");
    printArray(reversed);
 
 }
