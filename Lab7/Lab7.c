@@ -1,14 +1,14 @@
 #include <stdio.h>
 
-int MAX = 5;
+#define MAX = 5;
 
-void readArray (int anArray [MAX]);
-void reverseArray (int original [MAX], int reversed [MAX]);
-void printArray (int anArray [MAX]);
+void readArray (int anArray []);
+void reverseArray (int original [], int reversed []);
+void printArray (int anArray []);
 
 int main(){
 
-   int anArray [MAX], newArray [MAX];
+   int anArray [5], newArray [5];
    
    printf ("Testing function anArray \n\n");
    readArray(anArray);
