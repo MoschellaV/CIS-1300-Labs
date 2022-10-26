@@ -1,14 +1,15 @@
 #include <stdio.h>
 
-#define MAX = 5;
+// max can be changed to any number and this code will still reverse the array
+#define MAX 5
 
-void readArray (int anArray []);
-void reverseArray (int original [], int reversed []);
-void printArray (int anArray []);
+void readArray (int anArray [MAX]);
+void reverseArray (int original [MAX], int reversed [MAX]);
+void printArray (int anArray [MAX]);
 
 int main(){
 
-   int anArray [5], newArray [5];
+   int anArray [MAX], newArray [MAX];
    
    printf ("Testing function anArray \n\n");
    readArray(anArray);
@@ -19,34 +20,36 @@ int main(){
    return 0;
 }
 
-void readArray(int* anArray){
+void readArray(int *anArray){
     /*Function takes in array as input*/
-   printf("Enter 5 elements\n");
-   scanf("%d%d%d%d%d",&anArray[0],&anArray[1],&anArray[2],&anArray[3],&anArray[4]);
+   printf("Enter %d elements\n", MAX);
+   for(int i = 0; i < MAX; i++) scanf("%d", &anArray[i]);
+
    printf("\n");
    }
 
-void reverseArray (int* original, int* reversed){
+void reverseArray (int *original, int *reversed){
     /*Function takes reverses array*/
-   int count = 4;
+   int count = MAX;
 
    printf("Original Array\n");
    printArray(original);
 
-   for (int i = 0; i < 5; i++){
+   for (int i = 0; i < MAX; i++){
+      count--;
       reversed[i] = original[count];
-      count --;
+   
    }
    printf("Reversed Array\n");
    printArray(reversed);
-
 }
 
 void printArray (int* anArray) {
     /*Function prints array*/
 
-   printf("%d %d %d %d %d\n",anArray[0],anArray[1],anArray[2],anArray[3],anArray[4]);
-
+    for(int i = 0; i < MAX; i++) printf("%d ", anArray[i]);
+    printf("\n");
+   
 }
 
 
