@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <string.h>
 
-#define N 3
+#define N 5
 
 void print2D (int arr[N][N]) ;
 int isLeftdEqualToRightd (int arr [N][N], int *, int *);
