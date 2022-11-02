@@ -1,5 +1,5 @@
 #include <stdio.h>
-# include <string.h>
+#include <string.h>
 
 #define N 4
 
@@ -38,11 +38,13 @@ int main () {
 /////////////////////////////////
 
 void print2D(int arr[N][N]){
+    /*
+    Iterates through the entire 2d Array printing N elements on each row
+    */
 
-    int i,j;
-    for ( i = 0; i < N; i++) { 
+    for (int i = 0; i < N; i++) { 
         printf("Row %d: ",i+1);
-        for ( j = 0; j < N; j++) { 
+        for (int j = 0; j < N; j++) { 
             printf("%d ",arr[i][j]);
         } 
         printf("\n");
@@ -50,20 +52,24 @@ void print2D(int arr[N][N]){
 }
 
 int isLeftdEqualToRightd(int arr[N][N],int* left,int* right){
+    /*
+    Function takes in a 2D array and sums the left and right diagonals
+    it then returns a truth value based on if they are equal or not.
+    */
 
     int count = 0;
     int count2 = N-1;
     int sum1 = 0;
     int sum2 = 0;
 
-    // left to right diagonal
+    // summation left to right diagonal
     for(int k = 0; k < N; k++){
         sum1 += arr[k][count];
         count++;
     }
     *left = sum1;
     
-    // right to left diagonal
+    // summaiton of right to left diagonal
     for(int k = 0; k < N; k++){
         sum2 += arr[k][count2];
         count2--;
