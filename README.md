@@ -3,5 +3,4 @@
 ![Built with resentment](https://forthebadge.com/images/badges/built-with-resentment.svg)
 ![It works why?](https://forthebadge.com/images/badges/it-works-why.svg)
 
-### Why program in C?
-No. Don't.
+Recieved a grade of 100% for each lab.
