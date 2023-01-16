@@ -4,4 +4,5 @@
 ![It works why?](https://forthebadge.com/images/badges/it-works-why.svg)
 
 Semester 1, labs for programming course.
+
 Recieved a grade of **100%** for each lab.
